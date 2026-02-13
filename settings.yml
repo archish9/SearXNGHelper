@@ -27,112 +27,78 @@ engines:
 
   # Core + best ones
   - name: google
-    engine: google
     disabled: false
   - name: bing
-    engine: bing
     disabled: false
   - name: duckduckgo
-    engine: duckduckgo
     disabled: false
   - name: brave
-    engine: brave
     disabled: false
   - name: qwant
-    engine: qwant
     disabled: false
   - name: startpage
-    engine: startpage
     disabled: false
 
   # Images / Videos / News
-  - name: google images
-    engine: google_images
+  - name: google_images
     disabled: false
-  - name: bing images
-    engine: bing_images
+  - name: bing_images
     disabled: false
-  - name: google videos
-    engine: google_videos
+  - name: google_videos
     disabled: false
-  - name: bing videos
-    engine: bing_videos
+  - name: bing_videos
     disabled: false
-  - name: google news
-    engine: google_news
+  - name: google_news
     disabled: false
-  - name: bing news
-    engine: bing_news
+  - name: bing_news
     disabled: false
 
   # Academic / Science
   - name: arxiv
-    engine: arxiv
     disabled: false
-  - name: google scholar
-    engine: google_scholar
+  - name: google_scholar
     disabled: false
   - name: pubmed
-    engine: pubmed
     disabled: false
-  - name: semantic scholar
-    engine: semantic_scholar
+  - name: semantic_scholar
     disabled: false
 
   # Code / Media / Torrents
   - name: github
-    engine: github
     disabled: false
   - name: gitlab
-    engine: gitlab
     disabled: false
   - name: stackexchange
-    engine: stackexchange
     disabled: false
   - name: huggingface
-    engine: huggingface
     disabled: false
-  - name: youtube
-    engine: youtube_noapi
+  - name: youtube_noapi
     disabled: false
   - name: soundcloud
-    engine: soundcloud
     disabled: false
   - name: imdb
-    engine: imdb
     disabled: false
   - name: 1337x
-    engine: 1337x
     disabled: false
-  - name: annas archive
-    engine: annas_archive
+  - name: annas_archive
     disabled: false
   - name: nyaa
-    engine: nyaa
     disabled: false
   - name: piratebay
-    engine: piratebay
     disabled: false
   - name: solidtorrents
-    engine: solidtorrents
     disabled: false
   - name: zlibrary
-    engine: zlibrary
     disabled: false
   - name: wallhaven
-    engine: wallhaven
     disabled: false
   - name: unsplash
-    engine: unsplash
     disabled: false
   - name: wikipedia
-    engine: wikipedia
     disabled: false
   - name: reddit
-    engine: reddit
     disabled: false
   - name: hackernews
-    engine: hackernews
     disabled: false
 
   # Disable engines that crash without extra config
