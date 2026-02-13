@@ -1,0 +1,205 @@
+general:
+  instance_name: "ArchishUnlimitedSearXNG"
+  debug: false
+
+server:
+  port: 8080
+  bind_address: "0.0.0.0"
+  limiter: false                    # ← Truly unlimited
+  secret_key: "change-to-a-very-long-random-string-2026"
+
+search:
+  safe_search: 0
+  autocomplete: "google"
+  default_lang: ""
+  formats: [html, json, rss, csv]
+
+ui:
+  static_use_hash: true
+
+outgoing:
+  request_timeout: 5.0
+  useragent_suffix: "Render-SearXNG-Max"
+
+# Load defaults first (85 engines)
+use_default_settings: true
+
+
+# ──────────────────────────────────────────────────────────────
+# ENABLE EVERY SINGLE ENGINE (including all from the docs page)
+# ──────────────────────────────────────────────────────────────
+engines:
+
+  # Core web search (best results)
+  - name: google
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: duckduckgo
+    disabled: false
+  - name: brave
+    disabled: false
+  - name: qwant
+    disabled: false
+  - name: startpage
+    disabled: false
+  - name: yahoo
+    disabled: false
+  - name: mojeek
+    disabled: false
+  - name: yep
+    disabled: false
+
+  # All engines from https://docs.searxng.org/dev/engines/index.html
+  - name: adobe_stock
+    disabled: false
+  - name: alpinelinux
+    disabled: false
+  - name: annas_archive
+    disabled: false
+  - name: archlinux
+    disabled: false
+  - name: arxiv
+    disabled: false
+  - name: astrophysics_data_system
+    disabled: false
+  - name: azure
+    disabled: false
+  - name: bpb
+    disabled: false
+  - name: bt4g
+    disabled: false
+  - name: chinaso
+    disabled: false
+  - name: core
+    disabled: false
+  - name: crossref
+    disabled: false
+  - name: dailymotion
+    disabled: false
+  - name: discourse
+    disabled: false
+  - name: geizhals
+    disabled: false
+  - name: gitea
+    disabled: false
+  - name: github_code
+    disabled: false
+  - name: gitlab
+    disabled: false
+  - name: huggingface
+    disabled: false
+  - name: lemmy
+    disabled: false
+  - name: loc
+    disabled: false
+  - name: marginalia
+    disabled: false
+  - name: mastodon
+    disabled: false
+  - name: moviepilot
+    disabled: false
+  - name: mrs
+    disabled: false
+  - name: mwmbl
+    disabled: false
+  - name: odysee
+    disabled: false
+  - name: openalex
+    disabled: false
+  - name: openlibrary
+    disabled: false
+  - name: peertube
+    disabled: false
+  - name: piped
+    disabled: false
+  - name: presearch
+    disabled: false
+  - name: pubmed
+    disabled: false
+  - name: radio_browser
+    disabled: false
+  - name: recoll
+    disabled: false
+  - name: repology
+    disabled: false
+  - name: reuters
+    disabled: false
+  - name: seekr
+    disabled: false
+  - name: semantic_scholar
+    disabled: false
+  - name: soundcloud
+    disabled: false
+  - name: sourcehut
+    disabled: false
+  - name: springer
+    disabled: false
+  - name: tagesschau
+    disabled: false
+  - name: torznab
+    disabled: false
+  - name: tubearchivist
+    disabled: false
+  - name: voidlinux
+    disabled: false
+  - name: wallhaven
+    disabled: false
+  - name: wikimedia
+    disabled: false
+  - name: yacy
+    disabled: false
+  - name: zlibrary
+    disabled: false
+
+  # Bonus: Everything else from the full engine list (torrents, code, science, etc.)
+  - name: 1337x
+    disabled: false
+  - name: bing_images
+    disabled: false
+  - name: bing_news
+    disabled: false
+  - name: bing_videos
+    disabled: false
+  - name: github
+    disabled: false
+  - name: google_images
+    disabled: false
+  - name: google_news
+    disabled: false
+  - name: google_scholar
+    disabled: false
+  - name: google_videos
+    disabled: false
+  - name: hackernews
+    disabled: false
+  - name: imdb
+    disabled: false
+  - name: invidious
+    disabled: false
+  - name: nyaa
+    disabled: false
+  - name: openverse
+    disabled: false
+  - name: pinterest
+    disabled: false
+  - name: piratebay
+    disabled: false
+  - name: reddit
+    disabled: false
+  - name: rumble
+    disabled: false
+  - name: solidtorrents
+    disabled: false
+  - name: spotify
+    disabled: false
+  - name: stackexchange
+    disabled: false
+  - name: unsplash
+    disabled: false
+  - name: vimeo
+    disabled: false
+  - name: wikipedia
+    disabled: false
+  - name: youtube_noapi
+    disabled: false
