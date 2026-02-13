@@ -1,10 +1,11 @@
 FROM searxng/searxng:latest
 
-# Bake the full settings (Render free tier has no persistent storage)
+# Bake settings
 COPY settings.yml /etc/searxng/settings.yml
 
-# Fix permissions
+# Fix permissions + pre-update certificates (as root)
 USER root
-RUN chown searxng:searxng /etc/searxng/settings.yml && \
+RUN update-ca-certificates --fresh && \
+    chown searxng:searxng /etc/searxng/settings.yml && \
     chmod 644 /etc/searxng/settings.yml
 USER searxng
