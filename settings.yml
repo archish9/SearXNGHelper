@@ -172,11 +172,3 @@ engines:
     engine: hackernews
     shortcut: ""
     disabled: false
-
-  # Disable engines that always crash without keys
-  - name: spotify
-    disabled: true
-  - name: ahmia
-    disabled: true
-  - name: torch
-    disabled: true
