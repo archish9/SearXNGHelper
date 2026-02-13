@@ -69,7 +69,6 @@ engines:
   - name: gitlab
     disabled: false
   - name: stackexchange
-    engine: stackexchange
     disabled: false
   - name: huggingface
     disabled: false
@@ -90,7 +89,6 @@ engines:
   - name: solidtorrents
     disabled: false
   - name: zlibrary
-    engine: zlibrary
     disabled: false
   - name: wallhaven
     disabled: false
