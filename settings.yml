@@ -102,12 +102,3 @@ engines:
     disabled: false
   - name: hackernews
     disabled: false
-
-  # Disable engines that crash without extra config
-  - name: ahmia
-    disabled: true
-  - name: torch
-    disabled: true
-  - name: spotify
-    engine: spotify
-    disabled: true
