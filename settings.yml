@@ -40,27 +40,27 @@ engines:
     disabled: false
 
   # Images / Videos / News
-  - name: google_images
+  - name: google images
     disabled: false
-  - name: bing_images
+  - name: bing images
     disabled: false
-  - name: google_videos
+  - name: google videos
     disabled: false
-  - name: bing_videos
+  - name: bing videos
     disabled: false
-  - name: google_news
+  - name: google news
     disabled: false
-  - name: bing_news
+  - name: bing news
     disabled: false
 
   # Academic / Science
   - name: arxiv
     disabled: false
-  - name: google_scholar
+  - name: google scholar
     disabled: false
   - name: pubmed
     disabled: false
-  - name: semantic_scholar
+  - name: semantic scholar
     disabled: false
 
   # Code / Media / Torrents
@@ -72,7 +72,7 @@ engines:
     disabled: false
   - name: huggingface
     disabled: false
-  - name: youtube_noapi
+  - name: youtube
     disabled: false
   - name: soundcloud
     disabled: false
@@ -80,7 +80,7 @@ engines:
     disabled: false
   - name: 1337x
     disabled: false
-  - name: annas_archive
+  - name: annas archive
     disabled: false
   - name: nyaa
     disabled: false
