@@ -69,7 +69,7 @@ engines:
   - name: gitlab
     disabled: false
   - name: stackexchange
-    disabled: false
+    disabled: true
   - name: huggingface
     disabled: false
   - name: youtube
@@ -89,7 +89,7 @@ engines:
   - name: solidtorrents
     disabled: false
   - name: zlibrary
-    disabled: false
+    disabled: true
   - name: wallhaven
     disabled: false
   - name: unsplash
