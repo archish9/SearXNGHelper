@@ -6,7 +6,7 @@ server:
   port: 8080
   bind_address: "0.0.0.0"
   limiter: false
-  secret_key: "super-long-random-string-2026-change-me"
+  secret_key: "change-this-to-a-very-long-random-2026-string"
 
 search:
   safe_search: 0
@@ -19,142 +19,164 @@ ui:
 outgoing:
   request_timeout: 5.0
 
-# Load all official defaults first (most engines already here)
+# Load defaults first (core engines)
 use_default_settings: true
 
-# ────────────────────── ENABLE EVERYTHING (fixed format) ──────────────────────
+# ────────────────────── OVERRIDE + ENABLE EVERYTHING ──────────────────────
 engines:
 
-  # Core search (always on)
+  # Core search (best results)
   - name: google
     engine: google
+    shortcut: ""
     disabled: false
   - name: bing
     engine: bing
+    shortcut: ""
     disabled: false
   - name: duckduckgo
     engine: duckduckgo
+    shortcut: ""
     disabled: false
   - name: brave
     engine: brave
+    shortcut: ""
     disabled: false
   - name: qwant
     engine: qwant
+    shortcut: ""
     disabled: false
   - name: startpage
     engine: startpage
+    shortcut: ""
     disabled: false
 
-  # Images / Videos / News
-  - name: bing images
-    engine: bing_images
-    disabled: false
+  # Images, Videos, News
   - name: google images
     engine: google_images
+    shortcut: ""
     disabled: false
-  - name: bing videos
-    engine: bing_videos
+  - name: bing images
+    engine: bing_images
+    shortcut: ""
     disabled: false
   - name: google videos
     engine: google_videos
+    shortcut: ""
+    disabled: false
+  - name: bing videos
+    engine: bing_videos
+    shortcut: ""
     disabled: false
   - name: google news
     engine: google_news
+    shortcut: ""
     disabled: false
   - name: bing news
     engine: bing_news
+    shortcut: ""
     disabled: false
 
-  # Academic / Science
+  # Academic & Science
   - name: arxiv
     engine: arxiv
+    shortcut: ""
     disabled: false
   - name: google scholar
     engine: google_scholar
+    shortcut: ""
     disabled: false
   - name: pubmed
     engine: pubmed
+    shortcut: ""
     disabled: false
   - name: semantic scholar
     engine: semantic_scholar
-    disabled: false
-  - name: openalex
-    engine: openalex
+    shortcut: ""
     disabled: false
 
-  # Code / Dev
+  # Code & Dev
   - name: github
     engine: github
-    disabled: false
-  - name: github code
-    engine: github_code
+    shortcut: ""
     disabled: false
   - name: gitlab
     engine: gitlab
+    shortcut: ""
     disabled: false
   - name: stackexchange
     engine: stackexchange
+    shortcut: ""
     disabled: false
   - name: huggingface
     engine: huggingface
+    shortcut: ""
     disabled: false
 
-  # Media / Entertainment
+  # Media
   - name: youtube
     engine: youtube_noapi
+    shortcut: ""
     disabled: false
   - name: soundcloud
     engine: soundcloud
+    shortcut: ""
     disabled: false
   - name: imdb
     engine: imdb
-    disabled: false
-  - name: spotify
-    engine: spotify
+    shortcut: ""
     disabled: false
 
-  # Torrents / Archives / Misc (all the ones you wanted)
+  # Torrents, Archives, Misc (your full list)
   - name: 1337x
     engine: 1337x
+    shortcut: ""
     disabled: false
   - name: annas archive
     engine: annas_archive
+    shortcut: ""
     disabled: false
   - name: nyaa
     engine: nyaa
+    shortcut: ""
     disabled: false
   - name: piratebay
     engine: piratebay
+    shortcut: ""
     disabled: false
   - name: solidtorrents
     engine: solidtorrents
+    shortcut: ""
     disabled: false
   - name: zlibrary
     engine: zlibrary
+    shortcut: ""
     disabled: false
   - name: wallhaven
     engine: wallhaven
+    shortcut: ""
     disabled: false
   - name: unsplash
     engine: unsplash
+    shortcut: ""
     disabled: false
   - name: wikipedia
     engine: wikipedia
-    disabled: false
-
-  # More from the docs (add any others the same way)
-  - name: adobe stock
-    engine: adobe_stock
-    disabled: false
-  - name: mastodon
-    engine: mastodon
-    disabled: false
-  - name: peertube
-    engine: peertube
+    shortcut: ""
     disabled: false
   - name: reddit
     engine: reddit
+    shortcut: ""
     disabled: false
   - name: hackernews
     engine: hackernews
+    shortcut: ""
     disabled: false
+
+  # Disable engines that always crash without keys
+  - name: spotify
+    disabled: true
+  - name: ahmia
+    disabled: true
+  - name: torch
+    disabled: true

@@ -1,11 +1,12 @@
 FROM searxng/searxng:latest
 
-# Bake settings
+# Bake the config
 COPY settings.yml /etc/searxng/settings.yml
 
-# Fix permissions + pre-update certificates (as root)
+# Run as root + fix permissions (eliminates all cert warnings)
 USER root
 RUN update-ca-certificates --fresh && \
-    chown searxng:searxng /etc/searxng/settings.yml && \
-    chmod 644 /etc/searxng/settings.yml
+    chown -R searxng:searxng /etc/searxng && \
+    chmod -R 755 /etc/searxng
+
 USER searxng
